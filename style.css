@@ -1,0 +1,264 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Para asegurar que esté por encima de otros elementos */
+}
+
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    height: 50px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.671);
+}
+#home {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url(kimono-1822520.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-top: 150px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 15px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 166, 0, 0.829);
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin-bottom: 50px;
+}
+
+.featured-image {
+    height: 500px;
+    border-radius: 90px;
+}
+
+.container1 {
+    background-color: rgb(32, 32, 32);
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.container1 h3 {
+    color: orange;
+    margin-top: 0;
+}
+
+.container1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    margin: 15% auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: orange;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+}
+
+.close-btn:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.contact-icon {
+    color: orange;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+    color: rgba(255, 166, 0, 0.829);
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: white;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* ...existing code... */
+
+.modal-content {
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    margin: 15% auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: orange;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+}
+
+.close-btn:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .content1 h1 {
+        font-size: 2.5rem;
+    }
+    .content1 p {
+        font-size: 1.2rem;
+    }
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content1 h1 {
+        font-size: 2rem;
+    }
+    .content1 p {
+        font-size: 1rem;
+    }
+}
